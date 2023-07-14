@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan</title>
+    <!-- Gunakan link CDN Bootstrap terbaru -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css" />
+    <!-- Tautkan file CSS terpisah -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Undangan Pernikahan</h1>
+      <p class="lead">Bismillahirohmanirrahim Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+      <hr class="my-4" />
+      <p class="lead">
+        Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan Resepsi pernikahan putra putri kami:
+        <br />
+        <span>Mia Astuti</span><br />
+        Putri kedua dari Bpk. Jani (janong) & Ibu Omah <br /><span>&</span><br /><span>Angga Erlangga</span><br />
+        Putra pertama dari Bpk Rustono & Ibu Kartinah
+      </p>
+      <p>Akad Nikah Diadakan Tanggal Juli 22 2023 Hari Sabtu Jam 09.00 WIB</p>
+      <p>Di kediaman mempelai wanita <br />Jl.Masjid Al-Hidayah Kp.Cakung no.74 RT 001/05 Kel.Jatisari Kec.jatiasih kota bekasi.</p>
+      <audio id="audio" src="romantis.mp3" loop></audio>
+      <button onclick="playMusic()" class="music-button">Putar Musik</button>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4">Galery</h2>
+          <div class="gallery">
+            <img src="foto1.jpeg" alt="Foto 1" />
+            <img src="foto2.jpeg" alt="Foto 2" />
+            <img src="foto3.jpeg" alt="Foto 3" />
+            <img src="foto4.jpeg" alt="Foto 4" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function playMusic() {
+        var audio = document.getElementById('audio');
+        audio.play();
+      }
+    </script>
+    <!-- Tambahkan script Bootstrap Bundle dan AOS.js di bawah ini -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

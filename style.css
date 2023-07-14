@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(bc.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: auto;
+}
+
+.jumbotron {
+  background-color: rgb(47, 180, 180);
+  background-size: 100vh;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.gallery img {
+  width: 20%;
+  height: auto;
+  margin: 10px;
+  border-radius: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Tambahan CSS baru di bawah ini */
+
+h1.display-4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p.lead {
+  font-size: 1.2rem;
+}
+
+hr.my-4 {
+  border-top: 2px solid white;
+  width: 50%;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+h2.mb-4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+span {
+  font-size: 2rem;
+}
+
+/* Tambahkan CSS berikut untuk tampilan hp */
+@media (max-width: 767px) {
+  .jumbotron {
+    padding: 20px;
+  }
+
+  h1.display-4 {
+    font-size: 2rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+
+  hr.my-4 {
+    width: 30%;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+/* Tambahkan CSS berikut untuk tampilan laptop */
+@media (min-width: 768px) {
+  .jumbotron {
+    padding: 50px;
+  }
+
+  h1.display-4 {
+    font-size: 2.5rem;
+  }
+
+  p.lead {
+    font-size: 1.2rem;
+  }
+
+  hr.my-4 {
+    width: 50%;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+}
+
+.music-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 70%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.music-button:hover {
+  cursor: pointer;
+  background-color: #0056b3;
+}
